@@ -1,0 +1,353 @@
+@import url("reset.css");
+@import url("./fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@bold&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Page css */
+
+.container {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-icon {
+  margin: 8px 0px 0px 8px;
+}
+
+.logo {
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  width: 300px;
+}
+
+.logo .img {
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.tagline {
+  margin: 20px 0 20px 0px;
+  font-weight: bold;
+  text-align: center;
+  float: center;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #09324D;
+  text-transform: uppercase;
+}
+
+/* .headcenter {
+  margin: 15px 0 15px 10px;
+} */
+
+.numfont {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  margin: 0px 8px;
+}
+
+.numfont>a {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  margin: 0px 8px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 0px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #38629a;
+  color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #38629a;
+}
+
+.mid-nav-conatainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-icon {
+  margin: 8px 8px 0px 0px;
+}
+
+/* Canal Page css */
+
+.canal-container {
+  margin: 20px 10px;
+}
+
+.top-heading {
+  background: #38629a;
+  border-radius: 0px 0px 0px 0px;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 0 0 0 10px;
+  display: flex;
+  position: relative;
+}
+
+.pageheading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px;
+  text-align: center;
+  text-transform: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.canal-map-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  margin: 15px 0 10px 0;
+}
+
+.left-map-container {
+  width: 25%;
+}
+
+.right-map-container {
+  width: 75%;
+}
+
+.dataviewcanalbtn h2 {
+  text-align: center;
+  font-size: 22px;
+  margin: 0px 0 10px 0;
+  background: #38629a;
+  color: #fff;
+  padding: 18px 0;
+  width: 100%;
+  cursor: pointer;
+  border: 2px solid #38629a
+}
+
+.lefttreemenuCanal {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.20);
+  white-space: nowrap;
+}
+
+.canalbox {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.histcardrain {
+  width: 100%;
+  padding: 5px 0 5px 0px;
+  text-align: center;
+  margin: 0px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  /* Ensure children stack vertically */
+  justify-content: center;
+}
+
+.histcardrain h3 {
+  font-size: 18px;
+  color: rgb(4, 4, 37);
+  font-family: viga;
+}
+
+.histcardrain p {
+  font-size: 11px;
+  line-height: 20px;
+  padding-bottom: 0px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.histcardrain span {
+  font-size: 11px;
+  line-height: 20px;
+  padding-bottom: 0px;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-weight: bold;
+}
+
+.histcardrain span:hover {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.histcardrain i {
+  font-size: 14px;
+  padding: 10px 10px 10px 0;
+}
+
+.histcardrain i:hover {
+  color: #000;
+}
+
+.boxbg {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+  background: linear-gradient(#38629A 25%, #fff 75%);
+  border-radius: 15px;
+}
+
+.boxbg:hover {
+  box-shadow: 0 3px 20px #002554;
+  transform: scale(1.02);
+  background: linear-gradient(#002554 10%, #fff 90%);
+  transition: 2s;
+}
+
+.des {
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 10px 10px 10px;
+  line-height: 20px;
+  /* font-size: 80%; */
+}
+
+.canalmapdiv {
+  color: #000;
+  height: 502px;
+}
+
+.cardn {
+  box-sizing: border-box;
+  float: left;
+  background: linear-gradient(#38629a 10%, #fff 90%);
+  border-radius: 15px;
+  border: 1px solid #d0dbec;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+}
+
+.cardn.basic1 {
+  /* background: #FFF; */
+  transform: none;
+  padding: 0px;
+}
+
+.cardn.basic1:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cardn.basic1 .title {
+  color: #002554;
+}
+
+.canal-details-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.canal-details-container>div {
+  width: 100%;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+  /* Header Page css */
+  .logo {
+    display: none;
+  }
+
+  .tagline {
+    margin: 20px 0 10px 0px;
+    font-size: 10px;
+  }
+  
+  .numfont {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    margin: 4px 4px;
+    text-align: center;
+  }
+
+  .canal-map-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 15px 0 10px 0;
+  }
+
+  .left-map-container {
+    width: 100%;
+  }
+
+  .right-map-container {
+    width: 100%;
+  }
+}
